@@ -11,7 +11,7 @@ from kokoro import KPipeline
 
 # Set up environment variables
 os.environ["HF_HOME"] = "D:/hf_cache"
-# Remove hardcoded token - will be loaded from .env file
+os.environ["HUGGING_FACE_HUB_TOKEN"] = "HF_TOKEN" 
 
 #  PIPELINE SETUP
 
