@@ -35,3 +35,39 @@ This project allows users to **speak into a mic** and hear **natural-sounding AI
 ```bash
 git clone https://github.com/yourusername/voice2voice-2phase-ai.git
 cd voice2voice-2phase-ai
+
+---
+
+## 🔧 Quickstart
+
+1. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Set your Hugging Face token**
+
+   You must provide your Hugging Face access token so the models can be downloaded.
+
+   - **Option A: Use a `.env` file**
+     Create a `.env` file in the root directory with:
+
+     ```env
+     HUGGING_FACE_HUB_TOKEN=your_hf_token_here
+     ```
+
+   - **Option B: Set it in your environment manually**
+
+     ```bash
+     export HUGGING_FACE_HUB_TOKEN=your_hf_token_here  # macOS/Linux
+     set HUGGING_FACE_HUB_TOKEN=your_hf_token_here      # Windows CMD
+     ```
+
+3. **Run the application**
+
+   ```bash
+   python app.py
+   ```
+
+---
