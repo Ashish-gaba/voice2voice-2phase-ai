@@ -13,7 +13,7 @@ This project allows users to **speak into a mic** and hear **natural-sounding AI
 - ✅ **2-Phase Simplicity:** Merges ASR + LLM using [Ultravox](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_1-8b)
 - 🧠 **LLM-powered conversations** (Llama 3.1-based model)
 - 🔊 **High-quality voice responses** using [Kokoro TTS](https://huggingface.co/hexgrad/Kokoro-82M)
-- 🎛️ **Gradio UI** for easy interaction and live audio chat
+- 🎛️ **Gradio UI** for easy interaction and live audio chat *(coming soon)*
 - 🧩 Easily extendable to other models or pipelines
 
 ---
@@ -24,7 +24,7 @@ This project allows users to **speak into a mic** and hear **natural-sounding AI
 |--------------|--------------------------------------|
 | ASR + LLM    | [`fixie-ai/ultravox-v0_5`](https://huggingface.co/fixie-ai/ultravox-v0_5-llama-3_1-8b) |
 | TTS          | [`hexgrad/Kokoro-82M`](https://huggingface.co/hexgrad/Kokoro-82M) |
-| UI           | [Gradio](https://gradio.app)         |
+| UI           | [Gradio](https://gradio.app) *(optional)* |
 | Language     | Python 3.10+                         |
 
 ---
@@ -32,9 +32,11 @@ This project allows users to **speak into a mic** and hear **natural-sounding AI
 ## 📦 Installation
 
 ### 1. Clone the repo
+
 ```bash
 git clone https://github.com/yourusername/voice2voice-2phase-ai.git
 cd voice2voice-2phase-ai
+```
 
 ---
 
@@ -69,5 +71,23 @@ cd voice2voice-2phase-ai
    ```bash
    python app.py
    ```
+---
+
+## 📌 Notes
+
+- Default sample rate: **16kHz** for recording, **24kHz** for playback.
+- Modify `record_audio(duration=5)` to change how long the mic listens.
+- Audio files are not saved to disk by default but can be enabled in `speak_kokoro`.
 
 ---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+Made with ❤️ by **Ashish Gaba**  
+Feel free to connect on [LinkedIn](https://www.linkedin.com/in/ashish-gaba/)
