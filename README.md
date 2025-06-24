@@ -80,14 +80,3 @@ cd voice2voice-2phase-ai
 - Audio files are not saved to disk by default but can be enabled in `speak_kokoro`.
 
 ---
-
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♂️ Author
-
-Made with ❤️ by **Ashish Gaba**  
-Feel free to connect on [LinkedIn](https://www.linkedin.com/in/ashish-gaba/)
